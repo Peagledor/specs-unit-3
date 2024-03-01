@@ -1,5 +1,5 @@
 header {
-  background-color: darkorange;
+  background-color: rgb(255, 136, 0);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,26 +10,26 @@ header {
   height: 60px;
 }
 
-button{
-    background-color: darkorange;
-    border: 0;
-    color: white; 
-    font-size: 20px;
+.nav_btn {
+  background-color: rgb(255, 136, 0);
+  border: 0;
+  color: white;
+  font-size: 20px;
 }
 
-button:hover {
+.nav_btn:hover {
   background-color: orange;
   border: 0;
-  color: grey; 
+  color: grey;
   cursor: pointer;
 }
 
-h2{
+h2 {
   font-size: 24px;
   color: white;
 }
 
-h5{
+h5 {
   font-size: 24px;
   color: white;
 }
@@ -46,7 +46,6 @@ footer {
   background-color: rgb(51, 51, 51);
 }
 
-
 .social_icons {
   display: flex;
   gap: 5px;
@@ -59,4 +58,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}

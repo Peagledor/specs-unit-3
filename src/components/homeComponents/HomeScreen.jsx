@@ -1,8 +1,11 @@
-import { React, useEffect } from 'react'
+import { React, useEffect, useState } from 'react'
 import AdBanner from './AdBanner'
 import axios from "axios";
+import RecipeContainer from './RecipeContainer'
 
 const HomeScreen = () => {  
+  const [ recipes, setRecipes ] = useState([]);
+  const url = `https://recipes.devmountain.com`;
 
   const getRecipes = () => {
     axios
@@ -23,6 +26,9 @@ const HomeScreen = () => {
     <div>
       <AdBanner />
       {/* Much code from Part 2 will be placed around here. Do your best! */}
+
+      <RecipeContainer recipes={recipes}/>
+
     </div>
   )
 }

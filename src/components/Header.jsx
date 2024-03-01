@@ -1,17 +1,17 @@
 import React from "react";
-import { Link }  from "react-router-dom"
-import styles from "./Banners.module.css"
+import { Link } from "react-router-dom";
+import styles from "./Banners.module.css";
 
 const Header = () => {
   return (
-    <header className="header" >
+    <header className="header">
       <h2>Devmountain Eatery</h2>
-      <nav >
-        <Link to="/" >
-          <button className={styles.button}>Home</button>
+      <nav>
+        <Link to="/">
+          <button className={styles.nav_btn}>Home</button>
         </Link>
         <Link to="/newRecipe">
-          <button>Add Recipe</button>
+          <button className={styles.nav_btn}>Add Recipe</button>
         </Link>
       </nav>
     </header>
